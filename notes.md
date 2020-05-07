@@ -1,4 +1,4 @@
-# Dashboard
+# How to navigate your own industry
 
 ## Initial Planning and Research
 
@@ -22,7 +22,6 @@ b) How is it all affected by different screen sizes?
 2. In CSS, respected ways of doing things often end up in a library. Twitter's Bootstrap was infamous for finally standardising a number of layouts and UI components.
 3. For a while, there were endless new libraries attempting to be better, smaller, or not rely on javascript.
 4. Fallbacks technically work everywhere, whereas the new technology that you are trying, only works in a limited number of places - which begs the question, why try the new tech at all? It seems to only be ADDITIONAL work, ADDITIONAL code - and we do not like unnecessary code! [Law of least code]
-5. 
 
 ## Decision
 
