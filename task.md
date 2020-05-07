@@ -16,7 +16,6 @@ b) How is it all affected by different screen sizes?
 7. Graceful degradataion - website does not break without explanation, it either copes without, or states it cannot work.
 8. Another word is 'fallback' or 'shiv', a fallback is either catered for in your design, or you rely on a polyfill to enable the behaviour you need.
 
-
 # AJAX
 
 1. Code a full page reload first
