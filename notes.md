@@ -42,6 +42,7 @@ b) How is it all affected by different screen sizes?
 ## Questions
 
 1. Will CSS Grid every fully replace flexbox? Was it made to do that?
+Grid is not a replacement for flexbox as both function differently. Flexbox can do things Grid can't do and vice versa and can also be used in conjunction with eachother.
 2. If you have to create a fallback ANYWAY, you may need to still use the more reliable tech as the fallback?
 
 # AJAX
