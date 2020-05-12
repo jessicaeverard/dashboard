@@ -3,13 +3,13 @@
 ## Markup
 
 1. Empty `<div>` does not take space
-2. 
+2. The `onresize` event is for browser window resize event, not the element's own resize - therefore any element given a function for this event is only listening for window resize. It is not like `onclick` where it is relative to the element the function is assigned to.
 
 ## Style
 
 1. If using a `float: left`, you need to have at least one `float: right`
 2. CSS2 and even CSS3 was not designed to produce empty layouts. A layout-first approach is catered for by flexbox and CSSGrid.
-
+3. `auto` leaves the browser default - beware this can be different for different browsers.
 
 
 ### CSS Units

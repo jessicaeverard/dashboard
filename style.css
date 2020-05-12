@@ -41,6 +41,7 @@ body {
 }
 
 #parent {
+  resize:none;
   width: 100%;
   min-width: calc( var(--child-space) * 2);
   text-align: left;
@@ -49,6 +50,11 @@ body {
 #child {
   max-width: 80%;
   min-width: var(--child-space);
+}
+
+#child2 {
+    max-width: 80%;
+    min-width: var(--child-space);
 }
 
 #second {

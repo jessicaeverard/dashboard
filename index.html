@@ -9,21 +9,24 @@
 </head>
 
 <body>
-	<div class="main" onmouseup="newSize()">
+	<div class="main">
 		<div id="first" class="pane" onmousedown="getSize(1)">.
 			<div></div>
 		</div>
 		<div id="second" class="pane" onmousedown="getSize(2)">.
 			<div></div>
 		</div>
-    <hr>
-	<div id="parent" class="pane2" onmousedown="getSize(1)">
-		<div id="child" class="pane2" onmousedown="getSize(2)">.
-	   inside
+		<hr>
+		<div id="parent" class="pane2">
+			<div id="child" class="pane2">
+				<div id="child2" class="pane2">
+					further
+				</div>
+				inside
+			</div>
+			outside
 		</div>
-    outside
-	</div>
-		
+
 
 	</div>
 	<!-- <script src="script.js"> -->
