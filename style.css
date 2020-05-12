@@ -2,7 +2,7 @@
   
   /* --child-space : calc(20%); */
   --child-space : calc( var(--min-pane-width) );
-  --min-pane-width : 20%; /* gets oisted for use in the above line */
+  --min-pane-width : 20vw; /* gets hoisted for use in the above line */
 }
 
 body {
@@ -37,23 +37,23 @@ body {
   overflow: auto;
 
   background: black;
-  /* border: 5px solid red; */
+  border: 5px solid red;
 }
 
 #parent {
   resize:none;
-  width: 100%;
-  min-width: calc( var(--child-space) * 2);
+  width: 100vw;
+  min-width: calc( var(--child-space) * 3); /* 3 represents the number of children + this element, so each of them have equal width */
   text-align: left;
 }
 
 #child {
-  max-width: 80%;
-  min-width: var(--child-space);
+  max-width: 80vw;
+  min-width: calc(var(--child-space) * 2); /* 2 represents the number of children + this element, so each of them have equal width*/
 }
 
 #child2 {
-    max-width: 80%;
+    max-width: 60vw;
     min-width: var(--child-space);
 }
 

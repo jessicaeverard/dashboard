@@ -45,6 +45,7 @@ e.g.
   /* The effect is 50% of viewport less the space taken by the borders of this element */  
 ```
 
+2. You cannot derive values via CSS from paren elements. Your logic has to manage using variables and arithmetic only, with perhaps relative calculations using `calc`. There is no pseudo `::parent` selector in CSS to attain a parent's value for any CSS attribute.
 
 # Steps
 
