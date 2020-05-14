@@ -47,6 +47,63 @@ e.g.
 
 2. You cannot derive values via CSS from paren elements. Your logic has to manage using variables and arithmetic only, with perhaps relative calculations using `calc`. There is no pseudo `::parent` selector in CSS to attain a parent's value for any CSS attribute.
 
+# CSS dimensions
+
+## js `getBoundingClientRect()`
+
+```
+<div id="x" style="color: black; background: red; display: inline; margin: 30px; padding: 50px;">
+    Check
+  </div>
+```
+Gives
+```
+bottom: 67.33333587646484
+height: 117.33333587646484
+left: 30
+right: 170.875
+top: -50
+width: 140.875
+x: 30
+y: -50
+```
+Width is calculated from 50px x 2 = 100, +width-of-text('check').
+
+## Research these and add notes
+
+```
+* {
+  box-sizing: border-box;
+}
+```
+
+  width
+  offsetwidth
+  outerWidth
+  getComputedStyle
+
+## Research this and add notes
+
+### grid view
+
+`.col-3`
+
+### media queries
+```
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+```
+### breakpoints
+
+### mobile first design
+
+1.Twitter bootstrap default style is `xs`.
+2. Designs should start from the smallest screen that is served, then build up with the additional screen real estate that the content can use and benefit from. Starting from a big device, and going backwards is very difficult and you find that you cannot work out how to display things, where to hide things etc.
+
+
 # Steps
 
 1. Vanilla CSS

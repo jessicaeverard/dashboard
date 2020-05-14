@@ -7,6 +7,10 @@
   
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0; padding: 0; color: white;
 }
@@ -43,11 +47,10 @@ body {
 }
 
 #parent {
-  resize:none;
+  /* resize:none;
   width: 100%;
   max-width: 100%;
-  min-width: calc( var(--child-space) * 3); /* 3 represents the number of children + this element, so each of them have equal width */
-  text-align: left;
+  min-width: calc( var(--child-space) * 4); /* 3 represents the number of children + this element, so each of them have equal width */
 }
 
 #child {
@@ -58,9 +61,23 @@ body {
     background-color: purple;
 }
 
+#child3 {
+    background-color: red;
+}
+
+#parent {
+  max-width: 300px;
+  max-height: 20px;
+  text-align: right;
+  overflow: hidden;
+}
+
 .inside {
-    max-width: 80%;
-    min-width: var(--child-space);
+    float: left;
+    resize: horizontal;
+    overflow:auto;
+    /* max-width: 25%; */
+    /* min-width: var(--child-space); */
 }
 
 #second {
