@@ -3,6 +3,8 @@
   /* --child-space : calc(20%); */
   --child-space : var(--min-pane-width );
   --min-pane-width : 20%; /* gets hoisted for use in the above line */
+  --pane-num:3;
+  
 }
 
 body {
@@ -31,7 +33,7 @@ body {
   height: 100%; */
   min-width: 0%;
   max-width: 100%;
-  width: 50%; /* nested */
+  width: calc(100%/var(--pane-num)); /* nested */
   float: left;
   resize: horizontal;
   overflow: auto;
@@ -43,21 +45,22 @@ body {
 #parent {
   resize:none;
   width: 100%;
+  max-width: 100%;
   min-width: calc( var(--child-space) * 3); /* 3 represents the number of children + this element, so each of them have equal width */
   text-align: left;
 }
 
 #child {
-  max-width: 80%;
-  min-width: calc(var(--child-space)*2); /* 2 represents the number of children + this element, so each of them have equal width*/
   background-color: blue;
 }
 
 #child2 {
-    max-width: 64%;
-    /* min-width: calc(var(--child-space)*2.5); */
-    min-width: calc(var(--child-space)*1.25); /*Does the size of this match outside when inside is stretched to the max both ways*/
     background-color: purple;
+}
+
+.inside {
+    max-width: 80%;
+    min-width: var(--child-space);
 }
 
 #second {
