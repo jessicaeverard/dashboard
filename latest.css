@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+
+#main {
+ background: red;
+ overflow: hidden;
+ width: 100vw;
+ height: 100vh;
+}
+
+.panel {
+ height: 100vh;
+ float: left;
+ /* display: inline; */
+ resize: horizontal;
+ overflow: auto;
+}
+
